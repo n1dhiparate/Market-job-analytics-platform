@@ -1,3 +1,8 @@
+## 🔗 Live Demo
+
+👉 https://market-job-analytics-platform.onrender.com/dashboard
+
+
 🚀 Market Job Analytics Platform
 
 A full-stack data analytics platform for extracting, analyzing, and visualizing job market intelligence using real-world datasets.
