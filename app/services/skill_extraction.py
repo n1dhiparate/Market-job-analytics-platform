@@ -1,14 +1,14 @@
+import os
 import pandas as pd
 from collections import Counter
 import re
 
-def get_work_type_distribution():
-    df = pd.read_csv("data/sample_jobs.csv")
-    return df["formatted_work_type"].value_counts().to_dict()
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+DATA_PATH = os.path.join(BASE_DIR, "data", "sample_jobs.csv")
 
 def get_top_skills(work_type=None):
 
-    df = pd.read_csv("data/sample_jobs.csv")
+    df = pd.read_csv(DATA_PATH)
 
     if work_type:
         df = df[df["formatted_work_type"] == work_type]
